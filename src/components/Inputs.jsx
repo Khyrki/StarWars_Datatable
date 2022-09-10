@@ -10,15 +10,18 @@ function Inputs() {
     'rotation_period',
     'surface_water',
   ]);
+
   const [filtersObject, setFiltersObject] = useState({
     column: '',
     comparison: '',
     value: '',
   });
+
   const {
     filters,
     setFilters,
   } = useContext(TableContext);
+  
   function inputNameHandleChange({ target }) {
     setFilters(
       {
